@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stroy`</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap-min -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap-theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/catalog.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon_on_site.png">
+    <style>
+      html,body{
+        background: -webkit-gradient(linear, left top, left bottom, from(rgb(134, 134, 199)), to(rgb(60, 72, 240))) fixed;
+      }
+      div{
+        background:white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header of site -->
+    <!--leftside of header-->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" style="margin-right:3%;"><img src="images/main_icon.png" style="height:30px; width:30px;"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">О нас</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="catalog/vodostok/vodostok.html" id="vodostok">Водосточная система</a></li>
+                <li><a href="catalog/gips/gips.html" id="gips">Гипсокартонные системы</a></li>
+                <li><a href="catalog/smes/smes.html" id="smes">Смеси строительные</a></li>
+                <li><a href="catalog/shtykatyrka/shtukatur.html" id="shtukaturk">Штукатурка</a></li>
+                <li><a href="catalog/compost/compost.html" id="compost">Канализационная система</a></li>
+                <li><a href="catalog/lacokras/lacokras.html" id="lacokras">Лако-красочные материалы</a></li>
+                <li><a href="catalog/krov/krov.html" id="krov">Кровля</a></li>
+                <li><a href="catalog/ogr/ogr.html" id="ogr">Ограждение</a></li>
+                <li><a href="catalog/otdel/otdel.html" id="otdel">Отделочные материалы</a></li>
+                <li><a href="catalog/izol/izol.html" id="izol">Паро/Гидро изоляция</a></li>
+                <li><a href="catalog/pena/pena.html" id="pena">Монтажная/Клей пена</a></li>
+                <li><a href="catalog/penoblock/penoblock.html" id="penoblock">Пеноблок</a></li>
+                <li><a href="catalog/drevo/drevo.html" id="drevo">Пиломатериалы и древесные плиты</a></li>
+                <li><a href="catalog/ruberoid/ruberoid.html" id="rubi">Рубероид</a></li>
+                <li><a href="catalog/samorez/samorez.html" id="samorez">Саморезы</a></li>
+                <li><a href="catalog/chemistry/chemistry.html" id="chemy">Строительная химия</a></li>
+                <li><a href="catalog/tara/tara.html" id="tara">Строительная тара</a></li>
+                <li><a href="catalog/uteplenie/uteplenie.html" id="uteplenie">Утепление</a></li>
+                <li><a href="catalog/electric/electric.html" id="electric">Электрика</a></li>
+                <li><a href="catalog/bricks/bricks.html" id="bricks">Кирпичи</a></li>
+                <li><a href="catalog/raznoe/raznoe.html" id="raznoe">Разное</a></li>
+              </ul>
+            </li>
+            <li class=""><a href="#" data-toggle="modal" data-target="#myModal">Контакты</a></li>
+          </ul>
+    <!--end of leftside-->
+    <!--Rightside of header-->
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" data-toggle="modal" data-target="#Cart"><i class="glyphicon glyphicon-trash" onclick="getItemsToCart()"
+                style="color:green;"><span class="badge"></span></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--end of rightside-->
+    <!--End of site`s header-->
+    <!--Main block-->
+    <!--Contacts block-->
+    <div class="container">
+      <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">x</button>
+              <h4 class="modal-title">Контакты</h4>
+            </div>
+            <div class="modal-body">
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                Пн-Сб: 7-18<br>
+                Вс: 7-14<br>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <span style="float:left;"></span>
+              <button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--End of contacts block-->
+    <!--Cart block-->
+    <div id="Cart" class="modal fade">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">x</button>
+            <h4 class="modal-title">Корзина</h4>
+          </div>
+          <div class="modal-body" id="here">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" id="price" style="float:left;"></button>
+            <a href="#" class="get" data-toggle="modal" data-target="#wait" data-dismiss="modal"><button class="btn btn-success">Оформить заказ</button></a>
+            <button class="btn btn-danger" data-dismiss="modal" id="close_cart">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--End of cart block-->
+    <div id="wait" class="modal fade">
+      <div class="modal-dialog modal-xs modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">x</button>
+            <h4 class="modal-title">Заказ</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-outline">
+              <p>Имя: <input class="form-control" type="text" id="ename"></p>
+              <p>Телефон: <input class="form-control" type="text" id="ephone"></p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" id="send-email" style="width:100%;" data-dismiss="modal"><a data-dismiss="modal" style="color:white;">Заказать</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End main block-->
+    <div class="container get_full">
+      <h3 class="text-center"><img src="images/main_icon.png" style="height:40px; width:50px;">| интернет-магазин "Центр-строй"</h3>
+      <span>
+        Сегодня можно легко приобрести любые строительные материалы, так как большинство магазинов имеют собственные интернет-магазины, где можно быстро оформить заказ и получить необходимый товар с доставкой в любой район города.<br>Сидя за ноутбуком, стационарным компьютером или посредством смартфона
+        можно быстро узнать все цены на строительные материалы. <br>Между тем, большинство
+        поставщиков устанавливают высокие цены, так как им приходится работать с многочисленными посредниками.<br> Наш интернет-магазин «Строительный» предлагает продукцию самых известных производителей строительных материалов, таких как: Момент, Церезит, Кнауф, Kreisel и т.д. <br>Именно поэтому вы можете приобрести у нас высококачественный товар по самым доступным ценам. Мы не просто сайт по продаже строительных материалов –
+        мы люди, которые помогут Вам получить помощь в отношении вашей "стройки".<br>При необходимости дополнительную консультацию можно
+        получить у наших менеджеров в режиме онлайн или позвонив по указанным на сайте телефонам в окне "Контакты".
+      </span>
+      <h3 class="text-center">Преимущества интернет-магазина "Центр-строй"</h3><br>
+      <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 cols">
+            <p id="gal">Хорошая репутация!</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 cols">
+            <p id="gal">Большой выбор товаров!</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 cols">
+            <p id="gal">Быстрая доставка!</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 cols">
+            <p id="gal">Демократичные цены!</p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cols">
+            <blockquote>
+            <p>Интересы покупателей &#8212; главное, в нашей работе!</p>
+            <footer></footer>
+          </blockquote>
+          </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/cart.js"></script>
+    <!-- BS JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

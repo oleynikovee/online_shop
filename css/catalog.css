@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+body{
+   font-family: 'Roboto Slab', serif;
+}
+* {
+    box-sizing: border-box;
+ }
+ .product-inner {
+    width: 30%;
+    margin: 0 auto 7px 0;
+    background:   white;
+    text-align: center;
+    border-bottom: 2px solid #ebebec;
+    transition: .2s linear;
+    left:3px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    /*border: groove black;
+    border-top: none;
+    border-image-source: linear-gradient(to bottom, #743ad5, #d53a9d);*/
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right bottom,black 10%,  transparent 30%, transparent 70%, grey 90%);
+    border-image-slice: 1;
+ }
+ @media(max-width:445px){
+    .product-inner{
+      font-size:12px;
+    }
+    .price{
+       margin-left:2%;
+    }
+ }
+ .product-inner:hover {
+    border-color: #bca480;
+ }
+ .product-wrap {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5px;
+ }
+ .product-wrap img {
+    display: block;
+    width: 100%;
+ }
+ .product-inner:hover .actions {
+    bottom: 0;
+ }
+ .product-info {
+    padding-bottom: 5px;
+ }
+ .product-title {
+    margin: 0 0 7px 0;
+    font-family: 'Noto Sans', sans-serif;
+ }
+ .product-title a {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: 400;
+    font-size: 16px;
+ }
+ .price {
+    font-weight: bold;
+    color: #bca480;
+    float:left;
+    margin-left:25%;
+ }
+.modal{
+   background-color: rgba(0, 0, 0, 0.445);
+}
+.modal-body{
+   overflow: auto;
+}
+.row {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display:         flex;
+   flex-wrap: wrap;
+ }
+ .row > [class*='col-'] {
+   display: flex;
+   flex-direction: column;
+ }
+ @media(max-width:392px) {
+   #close_cart{
+      width:100%;
+      margin-top: 2px;
+   }
+}
+#gal::before{
+ content:url(../images/gal.png);
+}
+.get_full{
+   padding: 0;
+   border: 1px solid white;
+   border-radius: 15px;
+   width:96%;
+   margin-bottom: 15px;
+}
+.get_full .row{
+   margin-left:15px;
+   width: 96%;
+}

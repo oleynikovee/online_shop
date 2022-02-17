@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Admin`</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap-min -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap-theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/catalog.css">
+    <style>
+      html,body{
+        background: -webkit-gradient(linear, left top, left bottom, from(blue), to(pink)) fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="goods-out"></div>
+      <h2>Товар</h2>
+      <p>Имя: <input type="text" id="gname"></p>
+      <p>Категория: <input type="text" id="gcategory"></p>
+      <p>Стоимость: <input type="text" id="gcost"></p>
+      <p>Изображение: <input type="text" id="img"></p>
+      <input type="hidden" id="gid">
+      <button class="add-to-db">Обновить</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/admin_menu.js"></script>
+    <!-- BS JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
